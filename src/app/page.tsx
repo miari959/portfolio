@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Hello, this is my portfolio</h1>
+      <h1>Muhamad Miari, Full-Stack Developer</h1>
     </main>
   );
 }
