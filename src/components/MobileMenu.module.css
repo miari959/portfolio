@@ -1,5 +1,4 @@
 .wrapper {
-  position: relative;
   display: none;
 }
 
@@ -12,76 +11,56 @@
 .button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   min-height: 44px;
   padding: 0 18px;
-  border: 1px solid var(--color-bone);
+  border: 1px solid var(--color-greige);
   border-radius: 999px;
-  background: var(--color-bone);
-  color: var(--color-forest);
+  background: transparent;
+  color: var(--color-bone);
   font: inherit;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 @media (hover: hover) {
   .button:hover {
-    background: var(--color-greige);
-    border-color: var(--color-greige);
+    background: var(--color-moss);
   }
-}
-
-.button svg {
-  transition: transform 0.2s ease;
-}
-
-.button[aria-expanded="true"] svg {
-  transform: rotate(180deg);
 }
 
 .panel {
   position: absolute;
+  left: 0;
   right: 0;
-  top: calc(100% + 8px);
-  z-index: 50;
-  width: min(320px, calc(100vw - 2 * var(--page-padding)));
-  padding: 6px;
-  display: flex;
-  flex-direction: column;
-  background: var(--color-bone);
-  border: 1px solid var(--color-greige);
-  border-radius: 14px;
+  top: 100%;
+  max-height: calc(100dvh - var(--header-height));
+  overflow-y: auto;
+  background: var(--color-forest);
+  border-top: 1px solid var(--color-olive);
+  border-bottom: 1px solid var(--color-olive);
 }
 
 .list {
   display: flex;
   flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 20px;
 }
 
 .item {
   display: flex;
   align-items: center;
-  min-height: 44px;
+  min-height: 48px;
   padding: 0 12px;
   border-radius: 10px;
-  color: var(--color-basalt);
-  font-size: 16px;
+  color: var(--color-bone);
+  font-size: 17px;
   text-decoration: none;
   transition: background-color 0.2s ease;
 }
 
 .item:hover {
-  background: var(--color-greige);
-}
-
-.divider {
-  height: 1px;
-  margin: 6px 12px;
-  background: var(--color-greige);
-}
-
-.panel :focus-visible {
-  outline-color: var(--color-forest);
+  background: var(--color-moss);
 }
