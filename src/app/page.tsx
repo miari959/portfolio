@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Home() {
   return (
-    <main>
+    <main className="container">
       <h1>{site.name}</h1>
       <p>{site.role} - {site.location}</p>
 
