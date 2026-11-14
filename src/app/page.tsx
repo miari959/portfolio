@@ -1,5 +1,6 @@
 import { site } from "@/content/site";
 import { projects } from "@/content/projects";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -9,11 +10,7 @@ export default function Home() {
 
       <h2>Selected work</h2>
       {projects.map((project) => (
-        <article key={project.slug}>
-          <h3>{project.title}</h3>
-          <p>{project.context}</p>
-          <p>{project.summary}</p>
-        </article>
+        <ProjectCard key={project.slug} project={project} />
       ))}
     </main>
   );
