@@ -57,3 +57,10 @@
 .menu :focus-visible {
   outline-color: var(--color-forest);
 }
+.button svg {
+  transition: transform 0.2s ease;
+}
+
+.button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}

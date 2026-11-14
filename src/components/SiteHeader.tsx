@@ -1,14 +1,9 @@
 import Link from "next/link";
 import { site } from "@/content/site";
+import { navItems } from "@/content/navigation";
 import { CvMenu } from "./CvMenu";
+import { MobileMenu } from "./MobileMenu";
 import styles from "./SiteHeader.module.css";
-
-const navItems = [
-  { label: "Work", href: "/#work" },
-  { label: "Experience", href: "/#experience" },
-  { label: "About", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
-];
 
 export function SiteHeader() {
   return (
@@ -25,7 +20,10 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <CvMenu />
+          <div className={styles.cv}>
+            <CvMenu />
+          </div>
+          <MobileMenu />
         </div>
       </div>
     </header>

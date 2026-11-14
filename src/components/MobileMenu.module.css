@@ -1,0 +1,87 @@
+.wrapper {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    display: block;
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--color-bone);
+  border-radius: 999px;
+  background: var(--color-bone);
+  color: var(--color-forest);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background: var(--color-greige);
+    border-color: var(--color-greige);
+  }
+}
+
+.button svg {
+  transition: transform 0.2s ease;
+}
+
+.button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 50;
+  width: min(320px, calc(100vw - 2 * var(--page-padding)));
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bone);
+  border: 1px solid var(--color-greige);
+  border-radius: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: var(--color-basalt);
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.item:hover {
+  background: var(--color-greige);
+}
+
+.divider {
+  height: 1px;
+  margin: 6px 12px;
+  background: var(--color-greige);
+}
+
+.panel :focus-visible {
+  outline-color: var(--color-forest);
+}

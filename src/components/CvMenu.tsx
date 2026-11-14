@@ -1,20 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { site } from "@/content/site";
+import { useDismiss } from "@/hooks/useDismiss";
 import styles from "./CvMenu.module.css";
 
 export function CvMenu() {
   const [open, setOpen] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  useDismiss(wrapperRef, buttonRef, open, () => setOpen(false));
 
   return (
-    <div
-      className={styles.wrapper}
-      onKeyDown={(event) => {
-        if (event.key === "Escape") setOpen(false);
-      }}
-    >
+    <div ref={wrapperRef} className={styles.wrapper}>
       <button
+        ref={buttonRef}
         type="button"
         className={styles.button}
         aria-expanded={open}
