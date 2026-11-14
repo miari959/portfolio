@@ -11,6 +11,7 @@ export default function Home() {
       {projects.map((project) => (
         <article key={project.slug}>
           <h3>{project.title}</h3>
+          <p>{project.context}</p>
           <p>{project.summary}</p>
         </article>
       ))}
