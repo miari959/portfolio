@@ -1,7 +1,10 @@
+import { site } from "@/content/site";
+
 export default function Home() {
   return (
     <main>
-      <h1>Muhamad Miari, Full-Stack Developer</h1>
+      <h1>{site.name}</h1>
+      <p>{site.role} - {site.location}</p>
     </main>
   );
 }
