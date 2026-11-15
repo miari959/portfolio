@@ -13,3 +13,11 @@ export type Project = {
   stack: string[];
   links: ExternalLink[];
 };
+
+export type ExperienceEntry = {
+  dates: string;
+  title: string;
+  place: string;
+  details: string[];
+  link?: ExternalLink;
+};

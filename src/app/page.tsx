@@ -1,6 +1,8 @@
 import { projects } from "@/content/projects";
 import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Recommendation } from "@/components/Recommendation";
+import { Experience } from "@/components/Experience";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -16,6 +18,10 @@ export default function Home() {
           <ProjectCard key={project.slug} project={project} />
         ))}
       </section>
+
+      <Recommendation />
+
+      <Experience />
     </main>
   );
 }

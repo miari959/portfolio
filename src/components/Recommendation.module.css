@@ -1,0 +1,38 @@
+.band {
+  background: var(--color-moss);
+}
+
+.inner {
+  padding-top: clamp(72px, 9vw, 120px);
+  padding-bottom: clamp(72px, 9vw, 120px);
+}
+
+.figure {
+  margin: 0;
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.mark {
+  display: block;
+  height: 52px;
+  font-family: var(--font-heading);
+  font-size: 128px;
+  line-height: 0.82;
+  color: var(--color-clay);
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.25;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-greige);
+}

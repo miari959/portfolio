@@ -1,0 +1,102 @@
+.section {
+  padding-top: clamp(80px, 10vw, 128px);
+  padding-bottom: clamp(80px, 10vw, 128px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 64px;
+}
+
+.title {
+  flex: 1 1 260px;
+  max-width: 340px;
+  margin: 0;
+  font-size: clamp(40px, 4.6vw, 60px);
+}
+
+.timeline {
+  flex: 999 1 560px;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 0 40px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 32px;
+}
+
+/* The dot in front of each entry */
+.item::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-clay);
+  border-radius: 50%;
+  background: var(--color-forest);
+}
+
+.item:first-child::before {
+  background: var(--color-clay);
+}
+
+/* The line from each dot down to the next one */
+.item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 23px;
+  bottom: -55px;
+  width: 2px;
+  background: var(--color-clay);
+}
+
+.dates {
+  flex: 0 0 170px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-greige);
+  font-variant-numeric: tabular-nums;
+}
+
+.content {
+  flex: 1 1 340px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.role {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.place {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-greige);
+}
+
+.detail {
+  margin: 4px 0 0;
+  max-width: 62ch;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.place + .detail {
+  margin-top: 8px;
+}
