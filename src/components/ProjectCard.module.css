@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: clamp(32px, 4vw, 48px) 0;
+  border-top: 1px solid var(--color-olive);
+}
+
+.card:last-child {
+  border-bottom: 1px solid var(--color-olive);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.12;
+}
+
+.summary {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px 24px;
+}
+
+.facts dt {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-greige);
+}
+
+.facts dd {
+  margin: 2px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}

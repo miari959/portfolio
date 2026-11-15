@@ -1,0 +1,8 @@
+.work {
+  padding-bottom: clamp(64px, 8vw, 104px);
+}
+
+.sectionTitle {
+  margin: 0 0 clamp(28px, 3.5vw, 44px);
+  font-size: clamp(40px, 4.6vw, 60px);
+}
