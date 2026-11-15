@@ -1,0 +1,103 @@
+.hero {
+  padding-top: clamp(56px, 8vw, 112px);
+  padding-bottom: clamp(64px, 8vw, 104px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 3.5vw, 44px);
+  animation: fade-in 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(56px, 9.4vw, 136px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 28px 64px;
+}
+
+.intro {
+  flex: 1 1 480px;
+  min-width: 0;
+  max-width: 36ch;
+  margin: 0;
+  font-size: clamp(21px, 2vw, 26px);
+  line-height: 1.45;
+}
+
+.contact {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.emailButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid var(--color-bone);
+  border-radius: 999px;
+  background: var(--color-bone);
+  color: var(--color-forest);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.emailButton:hover {
+  background: var(--color-greige);
+  border-color: var(--color-greige);
+}
+
+.links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.phoneOnly {
+  display: none;
+}
+
+.note {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-greige);
+}
+
+@media (max-width: 760px) {
+  .phoneOnly {
+    display: inline;
+  }
+}
