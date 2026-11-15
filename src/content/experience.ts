@@ -15,7 +15,10 @@ export const experience: ExperienceEntry[] = [
     dates: "Jan 2025 – Jun 2025",
     title: "Full-Stack Developer (Internship)",
     place: "Landsiedel NLP Training GmbH, Kitzingen, Germany. Full time.",
-    details: [],
+    details: [
+      "I was the company’s only developer at the time and reported directly to the managing director. He set my tasks each week, reviewed every change with me and advised me whenever I asked.",
+    ],
+    caseStudy: "landsiedel",
   },
   {
     dates: "May 2023 – Nov 2024",

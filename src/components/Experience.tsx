@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { experience } from "@/content/experience";
 import styles from "./Experience.module.css";
 
@@ -22,6 +23,11 @@ export function Experience() {
               {entry.link && (
                 <p className={styles.detail}>
                   <a href={entry.link.href}>{entry.link.label}</a>
+                </p>
+              )}
+              {entry.caseStudy && (
+                <p className={styles.detail}>
+                  <Link href={`/projects/${entry.caseStudy}`}>Read the case study</Link>
                 </p>
               )}
             </div>

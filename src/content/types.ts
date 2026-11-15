@@ -20,4 +20,5 @@ export type ExperienceEntry = {
   place: string;
   details: string[];
   link?: ExternalLink;
+  caseStudy?: string;
 };
