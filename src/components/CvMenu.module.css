@@ -6,14 +6,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 44px;
-  padding: 0 18px;
+  min-height: 48px;
+  padding: 0 22px;
   border: 1px solid var(--color-bone);
   border-radius: 999px;
   background: var(--color-bone);
   color: var(--color-forest);
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease, border-color 0.2s ease;

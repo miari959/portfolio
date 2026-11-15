@@ -16,7 +16,7 @@
 
 .name {
   font-family: var(--font-heading);
-  font-size: 22px;
+  font-size: 27px;
   line-height: 1;
   color: var(--color-bone);
   text-decoration: none;
@@ -25,23 +25,23 @@
 .right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 7px;
 }
 
 .navLink {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  padding: 0 14px;
+  padding: 0 17px;
   border-radius: 999px;
   color: var(--color-greige);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -56,5 +56,9 @@
   .nav,
   .cv {
     display: none;
+  }
+
+  .name {
+    font-size: 24px;
   }
 }

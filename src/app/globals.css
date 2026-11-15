@@ -17,7 +17,13 @@
   /* Layout */
   --content-width: 1200px;
   --page-padding: clamp(20px, 5vw, 48px);
-  --header-height: 72px;
+  --header-height: 99px;
+  
+}
+@media (max-width: 760px) {
+  :root {
+    --header-height: 72px;
+  }
 }
 
 /* Base styles: how plain HTML looks before any component adds its own */
