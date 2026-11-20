@@ -1,0 +1,26 @@
+.content {
+  padding-top: clamp(72px, 12vw, 160px);
+  padding-bottom: clamp(72px, 12vw, 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.title {
+  margin: 0;
+  max-width: 16ch;
+  font-size: clamp(44px, 6.4vw, 92px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+
+.text {
+  margin: 0;
+  max-width: 46ch;
+  font-size: clamp(19px, 1.7vw, 22px);
+}
+
+.homeLink {
+  margin-top: 8px;
+}

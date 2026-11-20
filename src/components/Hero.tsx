@@ -4,7 +4,7 @@ import styles from "./Hero.module.css";
 
 export function Hero() {
   return (
-    <section aria-label="Introduction" className={`container ${styles.hero}`}>
+    <section aria-label="Introduction" className={`container fade-in ${styles.hero}`}>
       <h1 className={styles.name}>{site.name}</h1>
       <div id="contact" className={styles.row}>
         <p className={styles.intro}>
@@ -14,7 +14,7 @@ export function Hero() {
         <div className={styles.contact}>
           <h2 className="sr-only">Contact</h2>
           <div className={styles.buttons}>
-            <a href={`mailto:${site.email}`} className={styles.emailButton}>
+            <a href={`mailto:${site.email}`} className="primary-button">
               Email me
             </a>
             <CopyEmailButton email={site.email} />
