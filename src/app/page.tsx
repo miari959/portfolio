@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Recommendation } from "@/components/Recommendation";
 import { Experience } from "@/components/Experience";
+import { About } from "@/components/About";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -22,6 +23,8 @@ export default function Home() {
       <Recommendation />
 
       <Experience />
+
+      <About />
     </main>
   );
 }

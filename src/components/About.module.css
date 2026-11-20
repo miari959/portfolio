@@ -1,0 +1,25 @@
+.section {
+  padding-top: clamp(80px, 10vw, 128px);
+  padding-bottom: clamp(80px, 10vw, 128px);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(40px, 4.6vw, 60px);
+}
+
+.lead {
+  margin: 0;
+  max-width: 34ch;
+  font-size: clamp(21px, 2vw, 24px);
+  line-height: 1.5;
+}
+
+.paragraph {
+  margin: 0;
+  max-width: 62ch;
+  line-height: 1.7;
+}

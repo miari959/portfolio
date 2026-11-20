@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Gloock, Readex_Pro } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const gloock = Gloock({
   weight: "400",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </a>
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
