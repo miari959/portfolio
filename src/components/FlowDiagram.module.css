@@ -1,0 +1,76 @@
+/* The Bone panel itself comes from .bone-panel in globals.css */
+.panel {
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flow {
+  width: 100%;
+  max-width: 296px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.box {
+  position: relative;
+  min-height: 56px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--color-olive);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* The box the diagram is about */
+.dark {
+  border-color: var(--color-forest);
+  background: var(--color-forest);
+  color: var(--color-bone);
+}
+
+.title {
+  font-weight: 600;
+}
+
+/* The arrow down to the next box: a line and a small triangle */
+.box:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: var(--color-olive);
+  transform: translateX(-50%);
+}
+
+.box:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 38px);
+  left: 50%;
+  border-top: 9px solid var(--color-olive);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transform: translateX(-50%);
+}
+
+.caption {
+  max-width: 360px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-graphite);
+  text-align: center;
+}

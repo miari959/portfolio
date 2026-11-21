@@ -82,6 +82,26 @@
   line-height: 1.4;
   font-weight: 600;
 }
+/* Lists in the text, with Clay bullets and numbers */
+.body > ul,
+.body > ol {
+  margin: 0;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.body > ul li::marker,
+.body > ol li::marker {
+  color: var(--color-clay);
+}
+
+/* Code names such as sys.settrace */
+.body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
 
 /* Links to the previous and next case study */
 .more {

@@ -7,7 +7,7 @@ import styles from "./CaseStudy.module.css";
 
 type Fact = {
   label: string;
-  value: string;
+  value: ReactNode;
 };
 
 type CaseStudyProps = {
