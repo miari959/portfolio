@@ -1,0 +1,148 @@
+/* The top: title, short introduction and the facts */
+.intro {
+  padding-top: clamp(32px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  margin: 0;
+  max-width: 20ch;
+  font-size: clamp(40px, 5.2vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+
+.lead {
+  margin: 0;
+  max-width: 62ch;
+  font-size: clamp(19px, 1.7vw, 22px);
+}
+
+.facts {
+  margin: 12px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-olive);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 32px;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-greige);
+}
+
+.value {
+  margin: 4px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* The sections: heading on the left, text on the right; stacked on small screens */
+.sections {
+  padding-top: clamp(48px, 6vw, 80px);
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 56px;
+  padding: clamp(40px, 5vw, 64px) 0;
+  border-top: 1px solid var(--color-olive);
+}
+
+.sectionTitle {
+  flex: 1 1 240px;
+  max-width: 300px;
+  margin: 0;
+  font-size: clamp(30px, 2.8vw, 38px);
+  line-height: 1.1;
+}
+
+.body {
+  flex: 999 1 560px;
+  min-width: 0;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.7;
+}
+
+.body p {
+  margin: 0;
+}
+
+.body h3 {
+  margin: 16px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* Links to the previous and next case study */
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 48px;
+  padding: clamp(40px, 5vw, 56px) 0 clamp(64px, 8vw, 104px);
+  border-top: 1px solid var(--color-olive);
+}
+
+.moreLink {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.next {
+  margin-left: auto;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.moreLabel {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-greige);
+}
+
+/* The project name gets a Clay underline when you hover the link */
+.moreTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 2.8vw, 36px);
+  line-height: 1.15;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.moreLink:hover .moreTitle {
+  text-decoration-color: var(--color-clay);
+}
+
+@media (max-width: 900px) {
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .next {
+    margin-left: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
