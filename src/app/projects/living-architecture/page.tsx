@@ -34,7 +34,17 @@ const pipeline = [
     ),
   },
   { text: "Raw call trace" },
-  { title: "Four-stage filter", text: "framework code, call depth, boundaries, layers", dark: true },
+  {
+    title: "Four-stage filter",
+    text: (
+      <>
+        framework code, call depth, boundaries, layers
+        <br />
+        runs in a Docker container
+      </>
+    ),
+    dark: true,
+  },
   { title: "UML sequence diagram", text: "React interface, FastAPI backend" },
 ];
 
@@ -122,6 +132,13 @@ export default function LivingArchitectureCaseStudy() {
       </CaseStudySection>
 
       <CaseStudySection id="learned" title="What I learned">
+        <p>
+          The biggest lesson was turning research into working code. I went through hundreds of
+          papers on runtime analysis and trace reduction and brought their ideas together in one
+          filter. Testing each stage on real traces then showed me what the papers couldn’t: which
+          stages were essential and which added nothing, which filtered too aggressively and which
+          didn’t go deep enough. That testing shaped the final four stages.
+        </p>
         <p>
           Next time, I’d count the call depth only across the application’s own code and skip the
           framework’s layers. In deep frameworks like Flask and Django, that would keep the
