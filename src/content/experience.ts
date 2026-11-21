@@ -7,7 +7,7 @@ export const experience: ExperienceEntry[] = [
     place: "Universität Rostock, Germany",
     details: [
       "Specialization in software architecture, data systems and applied AI.",
-      "Bachelor thesis: Visualizing the Living Architecture of Software Systems.",
+      "Bachelor thesis: Visualization of the “Living Architecture” of software systems.",
       "Team project, 2023: a MediaWiki extension in PHP and MySQL that implements the W3C Webmention standard, so wiki pages automatically notify the websites they link to.",
     ],
   },
