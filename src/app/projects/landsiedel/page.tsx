@@ -1,4 +1,5 @@
 import { CaseStudy, CaseStudySection, caseStudyMetadata } from "@/components/CaseStudy";
+import { SearchDiagram } from "@/components/SearchDiagram";
 
 export const metadata = caseStudyMetadata("landsiedel");
 
@@ -67,11 +68,12 @@ export default function LandsiedelCaseStudy() {
           seminars by meaning: it expands the visitor’s query, turns it into an OpenAI embedding and
           compares it with the embeddings of the seminars.
         </p>
-        <p>
+         <p>
           My own addition was a topic index: the exact topics discussed in each seminar, stored in
           MySQL and used by the search. The embeddings find seminars by meaning; the topic index
           makes the results more precise.
         </p>
+        <SearchDiagram />
 
         <h3>Payments</h3>
         <p>
