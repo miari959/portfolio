@@ -1,18 +1,9 @@
-/* A Bone panel, so the diagram reads like a printed figure */
+/* The Bone panel itself comes from .bone-panel in globals.css */
 .panel {
-  margin: 8px 0;
   padding: 28px 24px 20px;
-  border-radius: 16px;
-  background: var(--color-bone);
-  color: var(--color-basalt);
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-/* The page's Bone focus outline would be invisible on Bone */
-.panel :focus-visible {
-  outline-color: var(--color-basalt);
 }
 
 /* On small screens the diagram keeps its size and scrolls sideways */

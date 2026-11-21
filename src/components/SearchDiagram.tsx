@@ -136,7 +136,7 @@ export function SearchDiagram() {
   const [replays, setReplays] = useState(0);
 
   return (
-    <figure className={styles.panel}>
+    <figure className={`bone-panel ${styles.panel}`}>
       <div
         className={styles.scroller}
         tabIndex={0}

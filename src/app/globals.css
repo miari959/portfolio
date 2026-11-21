@@ -185,3 +185,15 @@ a:hover {
     transform: none;
   }
 }
+/* Diagrams sit on a Bone panel, like a figure in a printed report */
+.bone-panel {
+  margin: 8px 0;
+  border-radius: 16px;
+  background: var(--color-bone);
+  color: var(--color-basalt);
+}
+
+/* The page's Bone focus outline would be invisible on Bone */
+.bone-panel :focus-visible {
+  outline-color: var(--color-forest);
+}
