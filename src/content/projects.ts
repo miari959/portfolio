@@ -32,11 +32,11 @@ export const projects: Project[] = [
     slug: "qutime",
     title: "QuTime: machine learning for hospital shift planning",
     summary:
-      "Our team built a system that plans staff shifts from a hospital’s real data. The project later became the basis of the company QuTime.",
-    role: "Team member, machine-learning and coordination groups",
-    setting: "Universität Rostock, with Rostock University Hospital",
-    period: "2024",
-    stack: ["Python", "scikit-learn", "PostgreSQL", "Docker", "pytest"],
+      "I profiled and prepared real hospital scheduling data and trained machine-learning models for an AI-based system that plans shifts around staff wishes. In testing, the system fulfilled more than 75% of the wishes, and the project became the foundation of the company QuTime.",
+    role: "Data preparation, machine learning and coordination with the hospital",
+    setting: "Universität Rostock, industry project with Rostock University Hospital",
+    period: "2023 to 2024",
+    stack: ["Python", "scikit-learn", "PostgreSQL", "Docker", "pytest", "Metanome"],
     links: [{ label: "qutime.de", href: "https://qutime.de" }],
   },
 ];
