@@ -1,6 +1,6 @@
 export const site = {
   name: "Muhamad Miari",
-  email: "name@example.com",
+  email: "muhamad.miari@gmail.com",
   cv: {
     english: "/cv/Muhamad-Miari-CV-EN.pdf",
     german: "/cv/Muhamad-Miari-CV-DE.pdf",

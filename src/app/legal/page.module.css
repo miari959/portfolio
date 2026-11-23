@@ -1,0 +1,48 @@
+/* The legal page: one readable column of text */
+.content {
+  max-width: 720px;
+  padding-top: clamp(32px, 4vw, 48px);
+  padding-bottom: clamp(64px, 8vw, 104px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.7;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: clamp(40px, 5.2vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+
+/* Each main part starts with a thin divider, as on the case studies */
+.content h2 {
+  margin: 28px 0 0;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-olive);
+  font-size: clamp(30px, 2.8vw, 38px);
+  line-height: 1.1;
+}
+
+.content h3 {
+  margin: 12px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.content p {
+  margin: 0;
+}
+
+/* Browsers show <address> in italics by default */
+.address {
+  font-style: normal;
+}
+
+.updated {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--color-greige);
+}
